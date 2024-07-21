@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  flask-buckets:
+    build:
+      context: .
+      dockerfile: dockerfile.buckets
+    ports:
+      - "5000:5000"
