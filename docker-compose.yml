@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   flask-buckets:
     build:
@@ -7,3 +6,7 @@ services:
       dockerfile: dockerfile.buckets
     ports:
       - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./:/app
